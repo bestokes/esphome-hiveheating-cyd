@@ -1,31 +1,5 @@
-#
-# Basic yaml code to get the ESP32-2432S028 working in Home Assistant as a 12-button "Stream Deck"
-# ============================================================
-# Author: Aaron Stewart @makeitworktech, with the help of ChatGPT.
-# GitHub: https://github.com/makeitworktech
-#
-# modified 20 Aug 2025 Larry Goodale @TTechGuy to make the button presses work correctly
-# adding in missing code from other yaml files and adding in substitutions for fonts, etc 
-#
-# ============================================================ 
-# NOTE:
-# In order for this to work you need to add the following settings in your secrets.yaml file:
-# - api_key
-# - ota_password
-# - wifi_ssid
-# - wifi_password
-# - ap_password
-#
-# Create a folder named fonts in your ESPHome folder, and copy the 
-# files fonts/Arimo-Regular.ttf and fonts/materialdesignicons-webfont.ttf there.
-#
-# ============================================================ 
-# General ESPHome Setup
-# ============================================================
-# Change the naming below, they will be the names used in Home Assistant
 
-substitutions:     # Modify these to fit your needs
-  font_direcotry: D:\Repos\esphome-display\fonts\
+substitutions:     
   width: 320
   height: 240
   device_name: esp32-cyd-2pt8
